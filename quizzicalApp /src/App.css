@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  
+ 
+
+}
+body {
+  color: #293264;
+  background-image: url('intro-page.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.start-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 10px;
+
+  
+}
+.start-container--info {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #293264;
+  letter-spacing: 1.25px;
+  margin-bottom: 10px;
+  font-family: 'Inter', 'sans-serif';
+}
+.start-container--name {
+  font-size: 31.25px;
+  font-weight: 700;
+  line-height: 37px;
+  color: #293264;
+  letter-spacing: 2.5px;
+  font-family: 'Karla', 'sans-serif';
+}
+.developer{ 
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #293264;
+  letter-spacing: 1.25px;
+  margin: 0 auto;
+  padding: 10px;
+
+}
+.main-container {
+
+  margin-top: 0;
+  margin-left: 70px;
+  margin-right: 70px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-around;
+  
+  
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+ 
+  width: 100%;
+
+}
+
+.container h2{
+  font-family: 'Karla', 'sans-serif';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 19px;
+}
+.container--answers {
+ 
+  display: flex;
+  width: auto;
+  gap: 20px;
+
+}
+
+.container--answer {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', 'sans-serif' ;
+  font-size: 10px;
+  line-height: 18px;
+ 
+}
+/*making radio button look likes like a button*/
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  display: inline-block;
+
+  width: auto;
+  height: auto;
+  text-align: center;
+  padding: 10px 20px;
+  border: 0.5px solid #4d5b9e;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #d6dbf5;
+  border: none;
+}
+.incorrect-answer:checked + label {
+  background-color: red;
+  border: none;
+}
+input[type="radio"].incorrect-answer:checked + label {
+  background-color: #f8bcbc;
+  opacity: 0.5;
+
+  
+}
+input[type="radio"].incorrect-answer + label {
+  opacity: 0.5;
+
+ 
+}
+
+#check-btn,
+#start-button
+{
+  width: 160px;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+  color: white;
+  background-color: #4d5b9e;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  text-align: center;
+  font-family: 'Inter', 'sans-serif';
+}
+
+div.show-score {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 2.5%;
+}
+#play-again-btn {
+  width: 160px;
+  height: auto;
+  padding: 10px;
+  color: white;
+  background-color: #4d5b9e;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+h3.user-score {
+  font-family: 'Inter', 'sans-serif';
+  font-weight: 700;
+  font-size: 16px;
+  align-self: center;
+ 
+  
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 480px) {
+  .main-container {
+    height: auto;
+    margin: 20px;
+    gap: 20px;
+  }
+  .start-container{
+    height: 80vh;
+    margin: 20px;
+    gap: 20px;
+  }
+
+  .container--answers {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .container--answer {
+    width: 100%;
+  }
+
+  label {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  #check-btn,
+  #start-button,
+  #play-again-btn {
+    width: 100%;
+  }
+}

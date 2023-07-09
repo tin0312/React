@@ -1,0 +1,187 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #23252C;
+    font-family: 'Inter', sans-serif;
+  }
+  
+ body{
+    margin-top: 44px;
+    margin-bottom: 0;
+ }
+  /*Info Style Section s*/
+  .info-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 400px;
+    margin: 0 auto;
+    background-color: #1A1B21;
+
+
+}
+  .info--picture {
+  
+    width: 400px;
+    height: 400px;
+}
+  .info--name{ 
+    height: 25.81px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 21px;
+  }
+  .info--role{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 15px;
+    text-align: center;
+    color: #F3BF99;
+    
+  
+  
+  }
+  .info--website{
+    font-family: 'Inter', sans-serif;
+    font-style: normal; 
+    font-size: 12.5px;
+    line-height: 150%;
+  /* identical to box height, or 15px */
+    text-align: center;
+    color: #F5F5F5;
+    margin-bottom: 20px;
+  }
+  .button-container{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    width: 400px;
+
+  
+  }
+  .button-container > button{
+    display: flex;
+    flex-direction: row;  
+    justify-content: center;
+    align-items: center;
+    padding: 9px 13px 9px 11px;
+    gap: 9px;
+    width: 170px;
+    height: 40px;
+    border: 1px solid #D1D5DB;
+  /* shadow/sm 0*/
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    border: none;
+  }
+  .button--email{
+    background: #FFFFFF;
+    color: #374151;
+  }
+  .button--linkedin{
+    background: #5093E2;
+    color: #FFFFFF;
+  }
+  .button-container img{
+    padding-right: 9.5px;
+    height: 18px;
+    width: 20px;
+
+}
+.about--container{
+    display: flex;
+    flex-direction: column;
+    width: 365px;
+    height: 160px;
+    margin: 0 auto;
+    padding-top: 24px;
+    padding-left: 36px;
+
+
+
+}
+.about--title{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 150%;
+    color: #F5F5F5;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.about--content{
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #DCDCDC;
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+
+
+}
+.interests--container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 365px;
+    height: 160px;
+    padding-left: 36px;
+
+
+}
+.interests--title{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 150%;
+    color: #F5F5F5;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.interests--content{
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #DCDCDC;
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+}
+.about--container, .interests--container{
+    background-color: #1A1B21;
+}
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13%;
+    background-color: #161619;
+    width: 400px;
+    height: 64px;
+    margin: 0 auto;
+    padding-top: 24px;
+   
+}
+.footer-container > img {
+    width: 35px;
+    height: 35px;
+}
